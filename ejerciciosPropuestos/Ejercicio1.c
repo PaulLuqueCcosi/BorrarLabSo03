@@ -10,6 +10,7 @@ int main()
     if (pid == 0)
     { /* child process */
         value += 15;
+        printf("Child: value = %d\n", value);
         return 0;
     }
     else if (pid > 0)
